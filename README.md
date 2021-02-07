@@ -1,6 +1,7 @@
 # sy_flutter_plugin
 
-A new Flutter project.
+This Project contains all codes, including demo and test,
+**VERY UNSTABLE**
 
 ## Getting Started
 
