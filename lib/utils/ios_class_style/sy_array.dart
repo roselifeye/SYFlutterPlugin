@@ -1,5 +1,7 @@
 import 'dart:html';
 
+import 'package:sy_flutter_plugin/utils/ios_class_style/y_range.dart';
+
 import '../sy_safe_getter.dart';
 
 class Array<T> {
@@ -19,7 +21,7 @@ class Array<T> {
     if (value != null) this._list.add(saveGetter(value));
   }
 
-  void insertObjectWithIndexes(List<T> value, Range) {
+  void insertObjectWithIndexes(List<T> value, YRange()) {
 
   }
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sy_flutter_plugin/Configs/colors_config.dart';
 import 'package:sy_flutter_plugin/Widgets/tags_grid_view.dart';
+import 'package:sy_flutter_plugin/utils/dev_util.dart';
 import 'package:sy_flutter_plugin/utils/sy_safe_getter.dart';
 import 'package:sy_flutter_plugin/widgets/sy_custom_card.dart';
 
@@ -42,15 +43,11 @@ class SYHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SYCustomCard(
-              insideWidget:
-                  SYTagsGridView(tagList: ['张三', '李四', '王五', '赵六']),
-              sEdgeInsets: EdgeInsets.fromLTRB(
-                16.w,
-                10.w,
-                16.w,
-                10.w)
+                insideWidget: SYTagsGridView(tagList: ['张三', '李四', '王五', '赵六']),
+                sEdgeInsets: EdgeInsets.fromLTRB(16.w, 10.w, 16.w, 10.w)),
+            Divide(
+              type: DivideType.Center,
             ),
-            Divide(type: DivideType.Center,),
           ],
         ),
       ),
